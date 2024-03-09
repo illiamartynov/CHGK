@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  #timer {
+    font-size: calc((40 / 400) * 100vmin);
+    color: #fff;
+    background-color: #4CAF50;
+    padding: calc((20 / 400) * 100vmin);
+    border-radius: calc((12 / 400) * 100vmin);
+    margin: calc((20 / 400) * 100vmin) auto;
+    width: calc((300 / 400) * 100vmin);
+  }
+  
+  .vote {
+    position: relative;
+  }
+  
+  .vote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: calc((10 / 400) * 100vmin);
+    pointer-events: none;
+  }
+  
+  .vote.disabled::before {
+    display: block;
+  }
+  
+  .vote.disabled #voteBtn {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  .vote.disabled #voteBtn::before {
+    content: '\1F512';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: calc((24 / 400) * 100vmin);
+  }
+  
+  #options {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #options li {
+    margin-bottom: calc((10 / 400) * 100vmin);
+  }
+  
+  #message {
+    width: 80%;
+    padding: calc((10 / 400) * 100vmin);
+    margin: calc((10 / 400) * 100vmin) auto;
+    outline: none;
+  }
+  
+  #voteBtn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: calc((10 / 400) * 100vmin) calc((20 / 400) * 100vmin);
+    font-size: calc((16 / 400) * 100vmin);
+    cursor: pointer;
+    border-radius: calc((5 / 400) * 100vmin);
+  }
+  
+  #voteBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

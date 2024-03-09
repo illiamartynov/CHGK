@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Голосование</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h1>Приветствую всех на первой игре ЧТО? ГДЕ? КОГДА?</h1>
+    <p>
+      Надеюсь вы проведете классную игру, после окончания можно будет
+      проголосовать за самого умного знатака
+    </p>
+    <div id="timer"></div>
+    <div class="vote">
+      <h2>Варианты голосования:</h2>
+      <ul id="options">
+        <li><input type="radio" name="vote" value="option1" /> Владимир 1</li>
+        <li><input type="radio" name="vote" value="option2" /> Владимир 2</li>
+        <li><input type="radio" name="vote" value="option3" /> Арсений</li>
+        <li><input type="radio" name="vote" value="option4" /> Михаил</li>
+        <li><input type="radio" name="vote" value="option5" /> Алина</li>
+        <li><input type="radio" name="vote" value="option6" /> Георгий</li>
+        <li><input type="radio" name="vote" value="option7" /> Макар</li>
+        <li><input type="radio" name="vote" value="option8" /> Анастасия</li>
+        <li><input type="radio" name="vote" value="option9" /> Стефания</li>
+        <li><input type="radio" name="vote" value="option10" /> Александр</li>
+        <li><input type="radio" name="vote" value="option11" /> Тимофей</li>
+
+      </ul>
+      <label for="message">Сообщение:</label>
+      <textarea placeholder="мб чет хотите добавить" id="message" rows="4" cols="50"></textarea>
+      <button id="voteBtn">Голосовать</button>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>

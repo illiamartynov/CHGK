@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     var endDate = new Date("March 9, 2024 22:00:00").getTime();
-  
     var timer = document.getElementById("timer");
     var voteBtn = document.getElementById("voteBtn");
     var vote = document.getElementsByClassName("vote");
@@ -68,7 +67,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         var message = document.getElementById("message").value;
         console.log(selectedOption);
-        // Prepare data for EmailJS
         var data = {
           service_id: "service_05tafjl",
           template_id: "template_xg1qjei",

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var endDate = new Date("March 9, 2024 22:00:00").getTime();
+    var endDate = new Date("March 9, 2025 22:00:00").getTime();
     var timer = document.getElementById("timer");
     var voteBtn = document.getElementById("voteBtn");
     var vote = document.getElementsByClassName("vote");
